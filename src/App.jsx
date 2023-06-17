@@ -4,25 +4,25 @@ const App = () => {
   return (
     <>
     {/* Header */}
-      <header className='px-2 border-b'>
+      <header className='px-2 border-b flex items-center justify-between'>
         <a className='uppercase font-bold text-purple-800' href="#">TailwindCSS news</a>
-        <nav>
-          <ul className="text-gray-500 font-semibold">
+        <nav className='flex imtes-center'>
+          <ul className="text-gray-500 font-semibold inline-flex items-center">
             <li><a className="inline-block py-3 px-2 border-b-2 border-transparent hover:text-purple-800 hover:border-purple-800" href="#">Home</a></li>
             <li><a className="inline-block py-3 px-2 border-b-2 border-transparent hover:text-purple-800 hover:border-purple-800" href="#">About</a></li>
             <li><a className="inline-block py-3 px-2 border-b-2 border-transparent hover:text-purple-800 hover:border-purple-800" href="#">Contact</a></li>
           </ul>
-          <ul>
-            <li><button className='py-1 px-3 border-2 rounded-full border-indigo-600 text-indigo-600 hover:text-white hover:bg-indigo-800 focus:outline-none focus:ring focus:ring-violet-300'>Login</button></li>
-            <li><button className='py-1 px-3 border-2 rounded-full border-indigo-600 text-indigo-600 hover:text-white hover:bg-indigo-800 focus:outline-none focus:ring focus:ring-violet-300'>Register</button></li>
+          <ul className='inline-flex items-center'>
+            <li><button className='ml-2 py-1 px-3 border-2 rounded-full border-indigo-600 text-indigo-600 hover:text-white hover:bg-indigo-800 focus:outline-none focus:ring focus:ring-violet-300'>Login</button></li>
+            <li><button className='ml-2 py-1 px-3 border-2 rounded-full border-indigo-600 text-indigo-600 hover:text-white hover:bg-indigo-800 focus:outline-none focus:ring focus:ring-violet-300'>Register</button></li>
           </ul>
         </nav>
       </header>
 
       <main>
         {/* breadcrumbs */}
-        <div>
-          <div className='py-4 overflow-y-auto whitespace-nowrap'>
+        <div className='px-2 flex items-center'>
+          <div className='py-4 overflow-y-auto whitespace-nowrap flex items-center'>
             <a className='text-gray-600 hover:text-gray-900' href="#">Home</a>
             <span className='mx-2 text-gray-500 hover:text-gray-900'>&gt;</span>
             <a className='text-gray-600' href="#">News</a>
@@ -31,6 +31,36 @@ const App = () => {
           </div>
         </div>
 
+        {/* news */}
+        <section className='px-2'>
+          <a className='block mb-10' href="">
+            <div className='flex'>
+              <div>
+                <h3 className='mt-3 mb-2 text-gray-700 font-bold text-2xl'>Adipisicing elit. Perferendis, ipsam?</h3>
+                <p className='text-gray-700'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quod iusto error fugiat cupiditate rem sapiente eaque veritatis illum impedit. Pariatur eius id explicabo ratione, autem eveniet dicta sequi possimus. Iste tempora officiis fugiat odit nulla corporis incidunt tenetur modi, quibusdam, ab accusamus minus, fuga recusandae impedit quo nostrum labore!</p>
+              </div>
+            </div>
+          </a>
+
+          <a className='block mb-10' href="">
+            <div className='flex'>
+              <div>
+                <h3 className='mt-3 mb-2 text-gray-700 font-bold text-2xl'>Explicabo ratione. Perferendis, ipsam?</h3>
+                <p className='text-gray-700'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quod iusto error fugiat cupiditate rem sapiente eaque veritatis illum impedit. Pariatur eius id explicabo ratione, autem eveniet dicta sequi possimus. Iste tempora officiis fugiat odit nulla corporis incidunt tenetur modi, quibusdam, ab accusamus minus, fuga recusandae impedit quo nostrum labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, animi perspiciatis autem explicabo, ab voluptate eum esse voluptates cupiditate sequi magnam rerum ipsam excepturi atque. Quod voluptatum repudiandae repellat dolores.</p>
+              </div>
+            </div>
+          </a>
+
+          <a className='block mb-10' href="">
+            <div className='flex'>
+              <div>
+                <h3 className='mt-3 mb-2 text-gray-700 font-bold text-2xl'>Nulla corporis incidunt</h3>
+                <p className='text-gray-700'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quod iusto error fugiat cupiditate rem sapiente eaque veritatis illum impedit. Pariatur eius id explicabo ratione, autem eveniet dicta sequi possimus.</p>
+              </div>
+            </div>
+          </a>
+        </section>
+        
         {/* pagination */}
         <div className='mt-20 mb-10'>
           <ul className='flex justify-center'>
