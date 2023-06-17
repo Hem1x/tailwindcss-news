@@ -2,10 +2,10 @@ import React from 'react'
 
 const App = () => {
   return (
-    <div className='max-w-screen-xl mx-auto'>
+    <div className=' max-w-screen-xl mx-auto'>
       {/* header */}
       <header className='px-2 border-b flex items-center justify-between h-14'>
-        <a className='uppercase font-bold text-purple-800' href="#">TailwindCSS news</a>
+        <a className='dark:text-purple-300 uppercase font-bold text-purple-800' href="#">TailwindCSS news</a>
         <nav className='hidden md:flex imtes-center'>
           <ul className="inline-flex items-center">
             <li><a className="header-link" href="#">Home</a></li>
@@ -28,7 +28,7 @@ const App = () => {
       {/* breadcrumbs */}
       <div className='px-2 flex items-center'>
           <div className='py-4 overflow-y-auto whitespace-nowrap flex items-center'>
-            <a className='text-gray-600 hover:text-gray-900' href="#">
+            <a className='dark:text-slate-200 text-gray-600 hover:text-gray-900' href="#">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
               </svg>
@@ -38,13 +38,13 @@ const App = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
               </svg>
             </span>
-            <a className='text-gray-600' href="#">News</a>
+            <a className='dark:text-slate-200 text-gray-600' href="#">News</a>
             <span className='mx-2 text-gray-300 hover:text-gray-900'>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
               </svg>
             </span>
-            <a className='text-gray-600' href="#">Tech</a>
+            <a className='dark:text-slate-200 text-gray-600' href="#">Tech</a>
           </div>
       </div>
 
@@ -70,7 +70,7 @@ const App = () => {
         <a className='w-full lg:w-1/3 bg-indigo-300 h-96 mb-4 relative rounded inline-block overflow-hidden' href="">
             <div className='absolute left-0 top-0 w-full h-full z-10 bg-gradient-to-b from-black/10 to-black/70'></div>
             <img className='absolute left-0 top-0 w-full h-full z-0 object-cover' src="https://i.pinimg.com/originals/d1/6d/e0/d16de0b26cf51d1acfce9fb6f30ad505.jpg" alt="" />
-            
+
             <div className='p-4 absolute bottom-0 left-0 z-20'>
               <h2 className='text-4xl font-semibold text-gray-100 leading-tight'>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, soluta.
@@ -95,8 +95,8 @@ const App = () => {
               <img className='w-full h-48 lg:w-48 opacity-80 object-cover lg:mr-4' src="https://i.pinimg.com/originals/d1/6d/e0/d16de0b26cf51d1acfce9fb6f30ad505.jpg" alt="img" />
               <div className='flex'>
                 <div>
-                  <h3 className='mb-2 text-gray-700 font-bold text-2xl'>Adipisicing elit. Perferendis, ipsam?</h3>
-                  <p className='text-gray-700'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quod iusto error fugiat cupiditate rem sapiente eaque veritatis illum impedit. Pariatur eius id explicabo ratione, autem eveniet dicta sequi possimus. Iste tempora officiis fugiat odit nulla corporis incidunt tenetur modi, quibusdam, ab accusamus minus, fuga recusandae impedit quo nostrum labore!</p>
+                  <h3 className='dark:text-slate-200 mb-2 text-gray-700 font-bold text-2xl'>Adipisicing elit. Perferendis, ipsam?</h3>
+                  <p className='dark:text-slate-200 text-gray-700'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quod iusto error fugiat cupiditate rem sapiente eaque veritatis illum impedit. Pariatur eius id explicabo ratione, autem eveniet dicta sequi possimus. Iste tempora officiis fugiat odit nulla corporis incidunt tenetur modi, quibusdam, ab accusamus minus, fuga recusandae impedit quo nostrum labore!</p>
                 </div>
               </div>
             </a>
@@ -105,8 +105,8 @@ const App = () => {
               <img className='w-full h-48 lg:w-48 opacity-80 object-cover lg:mr-4' src="https://kartinki.pibig.info/uploads/posts/2023-04/thumbs/1680515572_kartinki-pibig-info-p-kartinki-spokoinoi-nochi-novie-krasivie-us-81.jpg" alt="img" />
               <div className='flex'>
                 <div>
-                  <h3 className='mb-2 text-gray-700 font-bold text-2xl'>Explicabo ratione. Perferendis, ipsam?</h3>
-                  <p className='text-gray-700'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quod iusto error fugiat cupiditate rem sapiente eaque veritatis illum impedit. Pariatur eius id explicabo ratione, autem eveniet dicta sequi possimus. Iste tempora officiis fugiat odit nulla corporis incidunt tenetur modi, quibusdam, ab accusamus minus, fuga recusandae impedit quo nostrum labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, animi perspiciatis autem explicabo, ab voluptate eum esse voluptates cupiditate sequi magnam rerum ipsam excepturi atque. Quod voluptatum repudiandae repellat dolores.</p>
+                  <h3 className='dark:text-slate-200 mb-2 text-gray-700 font-bold text-2xl'>Explicabo ratione. Perferendis, ipsam?</h3>
+                  <p className='dark:text-slate-200 text-gray-700'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quod iusto error fugiat cupiditate rem sapiente eaque veritatis illum impedit. Pariatur eius id explicabo ratione, autem eveniet dicta sequi possimus. Iste tempora officiis fugiat odit nulla corporis incidunt tenetur modi, quibusdam, ab accusamus minus, fuga recusandae impedit quo nostrum labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, animi perspiciatis autem explicabo, ab voluptate eum esse voluptates cupiditate sequi magnam rerum ipsam excepturi atque. Quod voluptatum repudiandae repellat dolores.</p>
                 </div>
               </div>
             </a>
@@ -115,8 +115,8 @@ const App = () => {
               <img className='w-full h-48 lg:w-48 opacity-80 object-cover lg:mr-4' src="https://kartinki.pibig.info/uploads/posts/2023-04/1680522312_kartinki-pibig-info-p-ochen-krasivaya-kartinka-spokoinoi-nochi-l-1.jpg" alt="img" />
               <div className='flex'>
                 <div>
-                  <h3 className='mb-2 text-gray-700 font-bold text-2xl'>Nulla corporis incidunt</h3>
-                  <p className='text-gray-700'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quod iusto error fugiat cupiditate rem sapiente eaque veritatis illum impedit. Pariatur eius id explicabo ratione, autem eveniet dicta sequi possimus.</p>
+                  <h3 className='dark:text-slate-200 mb-2 text-gray-700 font-bold text-2xl'>Nulla corporis incidunt</h3>
+                  <p className='dark:text-slate-200 text-gray-700'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quod iusto error fugiat cupiditate rem sapiente eaque veritatis illum impedit. Pariatur eius id explicabo ratione, autem eveniet dicta sequi possimus.</p>
                 </div>
               </div>
             </a>
@@ -140,10 +140,10 @@ const App = () => {
 
           {/* topic */}
           <div className='w-full md:w-1/2 lg:w-full mb-5'>
-            <h5 className='font-bold text-lg uppercase text-gray-700 mb-2'>Popular news</h5>
+            <h5 className='dark:text-slate-200 font-bold text-lg uppercase text-gray-700 mb-2'>Popular news</h5>
             <ul>
               <li className='px-1 py-4 border-white hover:border-gray-200'>
-                <a href="#" className='flex items-center text-gray-600'>
+                <a href="#" className='dark:text-slate-200 flex items-center text-gray-600'>
                   <span className='inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-green-500 to-green-700'></span>
                   Vue
                   <span className='text-gray-500 ml-auto'>23 articles</span>
@@ -151,7 +151,7 @@ const App = () => {
               </li>
 
               <li className='px-1 py-4 border-white hover:border-gray-200'>
-                <a href="#" className='flex items-center text-gray-600'>
+                <a href="#" className='dark:text-slate-200 flex items-center text-gray-600'>
                   <span className='inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-orange-500 to-orange-700'></span>
                   Svelte
                   <span className='text-gray-500 ml-auto'>20 articles</span>
@@ -159,7 +159,7 @@ const App = () => {
               </li>
 
               <li className='px-1 py-4 border-white hover:border-gray-200'>
-                <a href="#" className='flex items-center text-gray-600'>
+                <a href="#" className='dark:text-slate-200 flex items-center text-gray-600'>
                   <span className='inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-red-500 to-red-700'></span>
                   Angular
                   <span className='text-gray-500 ml-auto'>15 articles</span>
@@ -167,7 +167,7 @@ const App = () => {
               </li>
 
               <li className='px-1 py-4 border-white hover:border-gray-200'>
-                <a href="#" className='flex items-center text-gray-600'>
+                <a href="#" className='dark:text-slate-200 flex items-center text-gray-600'>
                   <span className='inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-blue-500 to-blue-700'></span>
                   React
                   <span className='text-gray-500 ml-auto'>7 articles</span>
@@ -182,8 +182,8 @@ const App = () => {
 
             {/* subscribe */}
             <div className='my-5 md:my-0 lg:my5'>
-              <h5 className='font-bold text-lg uppercase text-gray-700 mb-2'>Subscribe</h5>
-              <p className='text-gray-7600 mb-4'>Subscribe to our newsletter</p>
+              <h5 className='dark:text-slate-200 font-bold text-lg uppercase text-gray-700 mb-2'>Subscribe</h5>
+              <p className='dark:text-slate-200 text-gray-7600 mb-4'>Subscribe to our newsletter</p>
               <input placeholder='your email' type="email" className='transition-all duration-300 text-gray-700 bg-gray-100 p-2 w-full border rounded-t hover:border-gray-900'/>
               <button className='transition-all duration-300 px-4 py-2 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-800'>Subscribe</button>
             </div>
