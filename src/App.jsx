@@ -4,9 +4,9 @@ const App = () => {
   return (
     <div className='max-w-screen-xl mx-auto'>
       {/* header */}
-      <header className='px-2 border-b flex items-center justify-between'>
+      <header className='px-2 border-b flex items-center justify-between h-14'>
         <a className='uppercase font-bold text-purple-800' href="#">TailwindCSS news</a>
-        <nav className='flex imtes-center'>
+        <nav className='hidden md:flex imtes-center'>
           <ul className="inline-flex items-center">
             <li><a className="header-link" href="#">Home</a></li>
             <li><a className="header-link" href="#">About</a></li>
@@ -17,6 +17,12 @@ const App = () => {
             <li><button className='header-btn'>Register</button></li>
           </ul>
         </nav>
+
+        <button className='inline-block md:hidden'>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
       </header>
 
       {/* breadcrumbs */}
@@ -43,8 +49,8 @@ const App = () => {
       </div>
 
       {/* Banners */}
-      <section className='px-2 flex space-x-2'>
-        <a className='w-2/3 bg-gradient-to-tr bg-purple-300 h-96 mb-4 relative rounded inline-block overflow-hidden' href="">
+      <section className='px-2 lg:flex lg:space-x-2'>
+        <a className='w-full lg:w-2/3 bg-gradient-to-tr bg-purple-300 h-96 mb-4 relative rounded inline-block overflow-hidden' href="">
           <div className='p-4 absolute bottom-0 left-0 z-20'>
             <h2 className='text-4xl font-semibold text-gray-100 leading-tight'>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, soluta.
@@ -52,7 +58,7 @@ const App = () => {
           </div>
         </a>
 
-        <a className='w-1/3 bg-indigo-300 h-96 mb-4 relative rounded inline-block overflow-hidden' href="">
+        <a className='w-full lg:w-1/3 bg-indigo-300 h-96 mb-4 relative rounded inline-block overflow-hidden' href="">
           <div className='p-4 absolute bottom-0 left-0 z-20'>
             <h2 className='text-4xl font-semibold text-gray-100 leading-tight'>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, soluta.
@@ -61,8 +67,8 @@ const App = () => {
         </a>
       </section>
 
-      <main className='flex'>
-        <div className='w-2/3'>
+      <main className='lg:flex'>
+        <div className='w-full lg:w-2/3'>
           {/* news */}
           <section className='px-2'>
             <a className='block mb-10' href="">
@@ -107,9 +113,10 @@ const App = () => {
           </div>
         </div>
 
-        <div className='w-1/3 px-2'>
+        <div className='w-full lg:w-1/3 px-2 md:flex md:space-x-2 lg:block lg:space-x-0'>
+
           {/* topic */}
-          <div className='mb-5'>
+          <div className='w-full md:w-1/2 lg:w-full mb-5'>
             <h5 className='font-bold text-lg uppercase text-gray-700 mb-2'>Popular news</h5>
             <ul>
               <li className='px-1 py-4 border-white hover:border-gray-200'>
@@ -135,7 +142,7 @@ const App = () => {
                   <span className='text-gray-500 ml-auto'>15 articles</span>
                 </a>
               </li>
-              
+
               <li className='px-1 py-4 border-white hover:border-gray-200'>
                 <a href="#" className='flex items-center text-gray-600'>
                   <span className='inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-blue-500 to-blue-700'></span>
@@ -146,26 +153,30 @@ const App = () => {
             </ul>
           </div>
 
-          {/* divider */}
-          <div className="border border-dotted"></div>
+          <div className='w-full md:w-1/2 lg:w-full'>
+            {/* divider */}
+            <div className="border border-dotted md:hidden lg:block"></div>
 
-          {/* subscribe */}
-          <div className='my-5'>
-            <h5 className='font-bold text-lg uppercase text-gray-700 mb-2'>Subscribe</h5>
-            <p className='text-gray-7600 mb-4'>Subscribe to our newsletter</p>
-            <input placeholder='your email' type="email" className='text-gray-700 bg-gray-100 p-2 w-full border rounded-t hover:border-gray-900'/>
-            <button className='px-4 py-2 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-800'>Subscribe</button>
+            {/* subscribe */}
+            <div className='my-5 md:my-0 lg:my5'>
+              <h5 className='font-bold text-lg uppercase text-gray-700 mb-2'>Subscribe</h5>
+              <p className='text-gray-7600 mb-4'>Subscribe to our newsletter</p>
+              <input placeholder='your email' type="email" className='text-gray-700 bg-gray-100 p-2 w-full border rounded-t hover:border-gray-900'/>
+              <button className='px-4 py-2 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-800'>Subscribe</button>
+            </div>
+
+            {/* divider */}
+            <div className="border border-dotted md:hidden lg:block"></div>
           </div>
-
-          {/* divider */}
-          <div className="border border-dotted"></div>
         </div>
+
+
       </main>
 
     {/* footer */}
       <footer className='border-t mt-10 py-10 px-2'>
-        <div className='flex'>
-          <div className='mb-5 w-2/5'>
+        <div className='md:flex text-center'>
+          <div className='mb-5 w-full md:w-1/3'>
             <h6 className='font-semibold text-gray-700 mb-4'>Company</h6>
             <ul>
               <li><a className='footer-link' href="#">Team</a></li>
@@ -173,7 +184,7 @@ const App = () => {
             </ul>
           </div>
 
-          <div className='w-2/5'>
+          <div className='mb-5 w-full md:w-1/3'>
             <h6 className='font-semibold text-gray-700 mb-4'>Content</h6>
             <ul>
               <li><a className='footer-link' href="#">Block</a></li>
@@ -182,9 +193,9 @@ const App = () => {
             </ul>
           </div>
 
-          <div className='w-1/5'>
+          <div className='w-full md:w-1/3'>
             <h6 className='font-semibold text-gray-700 mb-4'>Contact Us</h6>
-            <ul className='flex'>
+            <ul className='flex justify-center'>
               <li className='mr-2'>
                 <a className='footer-link' href="#">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7">
