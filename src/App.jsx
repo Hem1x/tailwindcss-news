@@ -57,17 +57,33 @@ const App = () => {
             <h2 className='text-4xl font-semibold text-gray-100 leading-tight'>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, soluta.
             </h2>
+            <div className='flex mt-3'>
+              <img className='h-10 w-10 rounded-full mr-2 object-cover' src="https://randomuser.me/api/portraits/women/67.jpg" alt="auth"/>
+                <div>
+                  <p className='font-semibold text-gray-200 text-sm'>Jenny Doe</p>
+                  <time className='text-gray-400 text-xs'>14 march</time>
+                </div>
+            </div>
           </div>
         </a>
 
         <a className='w-full lg:w-1/3 bg-indigo-300 h-96 mb-4 relative rounded inline-block overflow-hidden' href="">
-          <div className='absolute left-0 top-0 w-full h-full z-10 bg-gradient-to-b from-black/10 to-black/70'></div>
-          <img className='absolute left-0 top-0 w-full h-full z-0 object-cover' src="https://i.pinimg.com/originals/d1/6d/e0/d16de0b26cf51d1acfce9fb6f30ad505.jpg" alt="" />
-          <div className='p-4 absolute bottom-0 left-0 z-20'>
-            <h2 className='text-4xl font-semibold text-gray-100 leading-tight'>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, soluta.
-            </h2>
-          </div>
+            <div className='absolute left-0 top-0 w-full h-full z-10 bg-gradient-to-b from-black/10 to-black/70'></div>
+            <img className='absolute left-0 top-0 w-full h-full z-0 object-cover' src="https://i.pinimg.com/originals/d1/6d/e0/d16de0b26cf51d1acfce9fb6f30ad505.jpg" alt="" />
+            
+            <div className='p-4 absolute bottom-0 left-0 z-20'>
+              <h2 className='text-4xl font-semibold text-gray-100 leading-tight'>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, soluta.
+              </h2>
+
+              <div className='flex mt-3'>
+                <img className='h-10 w-10 rounded-full mr-2 object-cover' src="https://randomuser.me/api/portraits/women/67.jpg" alt="auth"/>
+                  <div>
+                    <p className='font-semibold text-gray-200 text-sm'>Jenny Doe</p>
+                    <time className='text-gray-400 text-xs'>14 march</time>
+                  </div>
+              </div>
+            </div>
         </a>
       </section>
 
@@ -168,8 +184,8 @@ const App = () => {
             <div className='my-5 md:my-0 lg:my5'>
               <h5 className='font-bold text-lg uppercase text-gray-700 mb-2'>Subscribe</h5>
               <p className='text-gray-7600 mb-4'>Subscribe to our newsletter</p>
-              <input placeholder='your email' type="email" className='text-gray-700 bg-gray-100 p-2 w-full border rounded-t hover:border-gray-900'/>
-              <button className='px-4 py-2 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-800'>Subscribe</button>
+              <input placeholder='your email' type="email" className='transition-all duration-300 text-gray-700 bg-gray-100 p-2 w-full border rounded-t hover:border-gray-900'/>
+              <button className='transition-all duration-300 px-4 py-2 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-800'>Subscribe</button>
             </div>
 
             {/* divider */}
