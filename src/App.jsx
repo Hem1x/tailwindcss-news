@@ -57,6 +57,7 @@ const App = () => {
             <h2 className='text-4xl font-semibold text-gray-100 leading-tight'>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, soluta.
             </h2>
+            <span className='bg-gradient-to-bl from-blue-600 to-indigo-600 text-white inline-flex items-center justify-center px-4 py-1 mb-2'>React</span>
             <div className='flex mt-3'>
               <img className='h-10 w-10 rounded-full mr-2 object-cover' src="https://randomuser.me/api/portraits/women/67.jpg" alt="auth"/>
                 <div>
@@ -75,6 +76,8 @@ const App = () => {
               <h2 className='text-4xl font-semibold text-gray-100 leading-tight'>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, soluta.
               </h2>
+
+              <span className='bg-gradient-to-bl from-red-600 to-red-600/80 text-white inline-flex items-center justify-center px-4 py-1 mb-2'>Angular</span>
 
               <div className='flex mt-3'>
                 <img className='h-10 w-10 rounded-full mr-2 object-cover' src="https://randomuser.me/api/portraits/women/67.jpg" alt="auth"/>
