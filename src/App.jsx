@@ -51,6 +51,8 @@ const App = () => {
       {/* Banners */}
       <section className='px-2 lg:flex lg:space-x-2'>
         <a className='w-full lg:w-2/3 bg-gradient-to-tr bg-purple-300 h-96 mb-4 relative rounded inline-block overflow-hidden' href="">
+          <div className='absolute left-0 top-0 w-full h-full z-10 bg-gradient-to-b from-black/10 to-black/70'></div>
+          <img className='absolute left-0 top-0 w-full h-full z-0 object-cover' src="https://w.forfun.com/fetch/94/94c56e15f13f1de4740a76742b0b594f.jpeg" alt="" />
           <div className='p-4 absolute bottom-0 left-0 z-20'>
             <h2 className='text-4xl font-semibold text-gray-100 leading-tight'>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, soluta.
@@ -59,6 +61,8 @@ const App = () => {
         </a>
 
         <a className='w-full lg:w-1/3 bg-indigo-300 h-96 mb-4 relative rounded inline-block overflow-hidden' href="">
+          <div className='absolute left-0 top-0 w-full h-full z-10 bg-gradient-to-b from-black/10 to-black/70'></div>
+          <img className='absolute left-0 top-0 w-full h-full z-0 object-cover' src="https://i.pinimg.com/originals/d1/6d/e0/d16de0b26cf51d1acfce9fb6f30ad505.jpg" alt="" />
           <div className='p-4 absolute bottom-0 left-0 z-20'>
             <h2 className='text-4xl font-semibold text-gray-100 leading-tight'>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, soluta.
@@ -71,28 +75,31 @@ const App = () => {
         <div className='w-full lg:w-2/3'>
           {/* news */}
           <section className='px-2'>
-            <a className='block mb-10' href="">
+            <a className='block w-full lg:flex mb-10' href="">
+              <img className='w-full h-48 lg:w-48 opacity-80 object-cover lg:mr-4' src="https://i.pinimg.com/originals/d1/6d/e0/d16de0b26cf51d1acfce9fb6f30ad505.jpg" alt="img" />
               <div className='flex'>
                 <div>
-                  <h3 className='mt-3 mb-2 text-gray-700 font-bold text-2xl'>Adipisicing elit. Perferendis, ipsam?</h3>
+                  <h3 className='mb-2 text-gray-700 font-bold text-2xl'>Adipisicing elit. Perferendis, ipsam?</h3>
                   <p className='text-gray-700'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quod iusto error fugiat cupiditate rem sapiente eaque veritatis illum impedit. Pariatur eius id explicabo ratione, autem eveniet dicta sequi possimus. Iste tempora officiis fugiat odit nulla corporis incidunt tenetur modi, quibusdam, ab accusamus minus, fuga recusandae impedit quo nostrum labore!</p>
                 </div>
               </div>
             </a>
 
-            <a className='block mb-10' href="">
+            <a className='block w-full lg:flex mb-10' href="">
+              <img className='w-full h-48 lg:w-48 opacity-80 object-cover lg:mr-4' src="https://kartinki.pibig.info/uploads/posts/2023-04/thumbs/1680515572_kartinki-pibig-info-p-kartinki-spokoinoi-nochi-novie-krasivie-us-81.jpg" alt="img" />
               <div className='flex'>
                 <div>
-                  <h3 className='mt-3 mb-2 text-gray-700 font-bold text-2xl'>Explicabo ratione. Perferendis, ipsam?</h3>
+                  <h3 className='mb-2 text-gray-700 font-bold text-2xl'>Explicabo ratione. Perferendis, ipsam?</h3>
                   <p className='text-gray-700'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quod iusto error fugiat cupiditate rem sapiente eaque veritatis illum impedit. Pariatur eius id explicabo ratione, autem eveniet dicta sequi possimus. Iste tempora officiis fugiat odit nulla corporis incidunt tenetur modi, quibusdam, ab accusamus minus, fuga recusandae impedit quo nostrum labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, animi perspiciatis autem explicabo, ab voluptate eum esse voluptates cupiditate sequi magnam rerum ipsam excepturi atque. Quod voluptatum repudiandae repellat dolores.</p>
                 </div>
               </div>
             </a>
 
-            <a className='block mb-10' href="">
+            <a className='block w-full lg:flex mb-10' href="">
+              <img className='w-full h-48 lg:w-48 opacity-80 object-cover lg:mr-4' src="https://kartinki.pibig.info/uploads/posts/2023-04/1680522312_kartinki-pibig-info-p-ochen-krasivaya-kartinka-spokoinoi-nochi-l-1.jpg" alt="img" />
               <div className='flex'>
                 <div>
-                  <h3 className='mt-3 mb-2 text-gray-700 font-bold text-2xl'>Nulla corporis incidunt</h3>
+                  <h3 className='mb-2 text-gray-700 font-bold text-2xl'>Nulla corporis incidunt</h3>
                   <p className='text-gray-700'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quod iusto error fugiat cupiditate rem sapiente eaque veritatis illum impedit. Pariatur eius id explicabo ratione, autem eveniet dicta sequi possimus.</p>
                 </div>
               </div>
@@ -169,8 +176,6 @@ const App = () => {
             <div className="border border-dotted md:hidden lg:block"></div>
           </div>
         </div>
-
-
       </main>
 
     {/* footer */}
