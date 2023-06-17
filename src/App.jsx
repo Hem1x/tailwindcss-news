@@ -2,8 +2,8 @@ import React from 'react'
 
 const App = () => {
   return (
-    <>
-    {/* Header */}
+    <div className='max-w-screen-xl mx-auto'>
+      {/* header */}
       <header className='px-2 border-b flex items-center justify-between'>
         <a className='uppercase font-bold text-purple-800' href="#">TailwindCSS news</a>
         <nav className='flex imtes-center'>
@@ -19,9 +19,8 @@ const App = () => {
         </nav>
       </header>
 
-      <main>
-        {/* breadcrumbs */}
-        <div className='px-2 flex items-center'>
+      {/* breadcrumbs */}
+      <div className='px-2 flex items-center'>
           <div className='py-4 overflow-y-auto whitespace-nowrap flex items-center'>
             <a className='text-gray-600 hover:text-gray-900' href="#">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
@@ -41,69 +40,94 @@ const App = () => {
             </span>
             <a className='text-gray-600' href="#">Tech</a>
           </div>
+      </div>
+
+      {/* Banners */}
+      <section className='px-2 flex space-x-2'>
+        <a className='w-2/3 bg-violet-300 h-96 mb-4 relative rounded inline-block overflow-hidden' href="">
+          <div className='p-4 absolute bottom-0 left-0 z-20'>
+            <h2 className='text-4xl font-semibold text-gray-100 leading-tight'>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, soluta.
+            </h2>
+          </div>
+        </a>
+
+        <a className='w-1/3 bg-indigo-300 h-96 mb-4 relative rounded inline-block overflow-hidden' href="">
+          <div className='p-4 absolute bottom-0 left-0 z-20'>
+            <h2 className='text-4xl font-semibold text-gray-100 leading-tight'>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, soluta.
+            </h2>
+          </div>
+        </a>
+      </section>
+
+      <main className='flex'>
+        <div className='w-2/3'>
+          {/* news */}
+          <section className='px-2'>
+            <a className='block mb-10' href="">
+              <div className='flex'>
+                <div>
+                  <h3 className='mt-3 mb-2 text-gray-700 font-bold text-2xl'>Adipisicing elit. Perferendis, ipsam?</h3>
+                  <p className='text-gray-700'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quod iusto error fugiat cupiditate rem sapiente eaque veritatis illum impedit. Pariatur eius id explicabo ratione, autem eveniet dicta sequi possimus. Iste tempora officiis fugiat odit nulla corporis incidunt tenetur modi, quibusdam, ab accusamus minus, fuga recusandae impedit quo nostrum labore!</p>
+                </div>
+              </div>
+            </a>
+
+            <a className='block mb-10' href="">
+              <div className='flex'>
+                <div>
+                  <h3 className='mt-3 mb-2 text-gray-700 font-bold text-2xl'>Explicabo ratione. Perferendis, ipsam?</h3>
+                  <p className='text-gray-700'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quod iusto error fugiat cupiditate rem sapiente eaque veritatis illum impedit. Pariatur eius id explicabo ratione, autem eveniet dicta sequi possimus. Iste tempora officiis fugiat odit nulla corporis incidunt tenetur modi, quibusdam, ab accusamus minus, fuga recusandae impedit quo nostrum labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, animi perspiciatis autem explicabo, ab voluptate eum esse voluptates cupiditate sequi magnam rerum ipsam excepturi atque. Quod voluptatum repudiandae repellat dolores.</p>
+                </div>
+              </div>
+            </a>
+
+            <a className='block mb-10' href="">
+              <div className='flex'>
+                <div>
+                  <h3 className='mt-3 mb-2 text-gray-700 font-bold text-2xl'>Nulla corporis incidunt</h3>
+                  <p className='text-gray-700'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quod iusto error fugiat cupiditate rem sapiente eaque veritatis illum impedit. Pariatur eius id explicabo ratione, autem eveniet dicta sequi possimus.</p>
+                </div>
+              </div>
+            </a>
+          </section>
+
+          {/* pagination */}
+          <div className='mt-20 mb-10'>
+            <ul className='flex justify-center'>
+              <li><a className='pagination-item rounded-l-lg' href="#">Previous</a></li>
+              <li><a className='pagination-item' href="#">1</a></li>
+              <li><a className='pagination-item' href="#">2</a></li>
+              <li><a className='pagination-item text-blue-600 hover:bg-blue-100 hover:text-blue-600' href="#">3</a></li>
+              <li><a className='pagination-item' href="#">4</a></li>
+              <li><a className='pagination-item' href="#">5</a></li>
+              <li><a className='pagination-item rounded-r-lg' href="#">Next</a></li>
+            </ul>
+          </div>
         </div>
 
-        {/* news */}
-        <section className='px-2'>
-          <a className='block mb-10' href="">
-            <div className='flex'>
-              <div>
-                <h3 className='mt-3 mb-2 text-gray-700 font-bold text-2xl'>Adipisicing elit. Perferendis, ipsam?</h3>
-                <p className='text-gray-700'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quod iusto error fugiat cupiditate rem sapiente eaque veritatis illum impedit. Pariatur eius id explicabo ratione, autem eveniet dicta sequi possimus. Iste tempora officiis fugiat odit nulla corporis incidunt tenetur modi, quibusdam, ab accusamus minus, fuga recusandae impedit quo nostrum labore!</p>
-              </div>
-            </div>
-          </a>
+        <div className='w-1/3 px-2'>
+          {/* divider */}
+          <div className="border border-dotted"></div>
 
-          <a className='block mb-10' href="">
-            <div className='flex'>
-              <div>
-                <h3 className='mt-3 mb-2 text-gray-700 font-bold text-2xl'>Explicabo ratione. Perferendis, ipsam?</h3>
-                <p className='text-gray-700'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quod iusto error fugiat cupiditate rem sapiente eaque veritatis illum impedit. Pariatur eius id explicabo ratione, autem eveniet dicta sequi possimus. Iste tempora officiis fugiat odit nulla corporis incidunt tenetur modi, quibusdam, ab accusamus minus, fuga recusandae impedit quo nostrum labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, animi perspiciatis autem explicabo, ab voluptate eum esse voluptates cupiditate sequi magnam rerum ipsam excepturi atque. Quod voluptatum repudiandae repellat dolores.</p>
-              </div>
-            </div>
-          </a>
+          {/* subscribe */}
+          <div className='my-5'>
+            <h5 className='font-bold text-lg uppercase text-gray-700 mb-2'>Subscribe</h5>
+            <p className='text-gray-7600 mb-4'>Subscribe to our newsletter</p>
+            <input placeholder='your email' type="email" className='text-gray-700 bg-gray-100 p-2 w-full border rounded-t hover:border-gray-900'/>
+            <button className='px-4 py-2 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-800'>Subscribe</button>
+          </div>
 
-          <a className='block mb-10' href="">
-            <div className='flex'>
-              <div>
-                <h3 className='mt-3 mb-2 text-gray-700 font-bold text-2xl'>Nulla corporis incidunt</h3>
-                <p className='text-gray-700'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quod iusto error fugiat cupiditate rem sapiente eaque veritatis illum impedit. Pariatur eius id explicabo ratione, autem eveniet dicta sequi possimus.</p>
-              </div>
-            </div>
-          </a>
-        </section>
-        
-        {/* pagination */}
-        <div className='mt-20 mb-10'>
-          <ul className='flex justify-center'>
-            <li><a className='pagination-item rounded-l-lg' href="#">Previous</a></li>
-            <li><a className='pagination-item' href="#">1</a></li>
-            <li><a className='pagination-item' href="#">2</a></li>
-            <li><a className='pagination-item text-blue-600 hover:bg-blue-100 hover:text-blue-600' href="#">3</a></li>
-            <li><a className='pagination-item' href="#">4</a></li>
-            <li><a className='pagination-item' href="#">5</a></li>
-            <li><a className='pagination-item rounded-r-lg' href="#">Next</a></li>
-          </ul>
+          {/* divider */}
+          <div className="border border-dotted"></div>
         </div>
-
-        {/* divider */}
-        <div className="border border-dotted"></div>
-
-        {/* subscribe */}
-        <div className='my-5'>
-          <h5 className='font-bold text-lg uppercase text-gray-700 mb-2'>Subscribe</h5>
-          <p className='text-gray-7600 mb-4'>Subscribe to our newsletter</p>
-          <input placeholder='your email' type="email" className='text-gray-700 bg-gray-100 p-2 w-full border rounded-t hover:border-gray-900'/>
-          <button className='px-4 py-2 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-800'>Subscribe</button>
-        </div>
-
-        {/* divider */}
-        <div className="border border-dotted"></div>
       </main>
 
+    {/* footer */}
       <footer className='border-t mt-10 py-10 px-2'>
-        <div>
-          <div className='mb-5'>
+        <div className='flex'>
+          <div className='mb-5 w-2/5'>
             <h6 className='font-semibold text-gray-700 mb-4'>Company</h6>
             <ul>
               <li><a className='footer-link' href="#">Team</a></li>
@@ -111,7 +135,7 @@ const App = () => {
             </ul>
           </div>
 
-          <div>
+          <div className='w-2/5'>
             <h6 className='font-semibold text-gray-700 mb-4'>Content</h6>
             <ul>
               <li><a className='footer-link' href="#">Block</a></li>
@@ -120,7 +144,7 @@ const App = () => {
             </ul>
           </div>
 
-          <div>
+          <div className='w-1/5'>
             <h6 className='font-semibold text-gray-700 mb-4'>Contact Us</h6>
             <ul className='flex'>
               <li className='mr-2'>
@@ -152,7 +176,7 @@ const App = () => {
 
         
       </footer>
-    </>
+    </div>
 
   )
 }
