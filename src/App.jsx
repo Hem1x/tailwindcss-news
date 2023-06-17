@@ -12,6 +12,10 @@ const App = () => {
             <li><a className="inline-block py-3 px-2 border-b-2 border-transparent hover:text-purple-800 hover:border-purple-800" href="#">About</a></li>
             <li><a className="inline-block py-3 px-2 border-b-2 border-transparent hover:text-purple-800 hover:border-purple-800" href="#">Contact</a></li>
           </ul>
+          <ul>
+            <li><button className='py-1 px-3 border-2 rounded-full border-indigo-600 text-indigo-600 hover:text-white hover:bg-indigo-800 focus:outline-none focus:ring focus:ring-violet-300'>Login</button></li>
+            <li><button className='py-1 px-3 border-2 rounded-full border-indigo-600 text-indigo-600 hover:text-white hover:bg-indigo-800 focus:outline-none focus:ring focus:ring-violet-300'>Register</button></li>
+          </ul>
         </nav>
       </header>
 
@@ -27,6 +31,19 @@ const App = () => {
           </div>
         </div>
 
+        {/* pagination */}
+        <div className='mt-20 mb-10'>
+          <ul className='flex justify-center'>
+            <li><a className='inline-block py-1 px-3 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700 rounded-l-lg' href="#">Previous</a></li>
+            <li><a className='inline-block py-1 px-3 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700' href="#">1</a></li>
+            <li><a className='inline-block py-1 px-3 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700' href="#">2</a></li>
+            <li><a className='inline-block py-1 px-3 border border-gray-300 text-blue-600 hover:bg-blue-100' href="#">3</a></li>
+            <li><a className='inline-block py-1 px-3 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700' href="#">4</a></li>
+            <li><a className='inline-block py-1 px-3 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700' href="#">5</a></li>
+            <li><a className='inline-block py-1 px-3 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700 rounded-r-lg' href="#">Next</a></li>
+          </ul>
+        </div>
+
         {/* divider */}
         <div className="border border-dotted"></div>
 
@@ -35,6 +52,7 @@ const App = () => {
           <h5 className='font-bold text-lg uppercase text-gray-700 mb-2'>Subscribe</h5>
           <p className='text-gray-7600 mb-4'>Subscribe to our newsletter</p>
           <input placeholder='your email' type="email" className='text-gray-700 bg-gray-100 p-2 w-full border rounded-t hover:border-gray-900'/>
+          <button className='px-4 py-2 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-800'>Subscribe</button>
         </div>
 
         {/* divider */}
