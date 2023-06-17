@@ -7,14 +7,14 @@ const App = () => {
       <header className='px-2 border-b flex items-center justify-between'>
         <a className='uppercase font-bold text-purple-800' href="#">TailwindCSS news</a>
         <nav className='flex imtes-center'>
-          <ul className="text-gray-500 font-semibold inline-flex items-center">
-            <li><a className="inline-block py-3 px-2 border-b-2 border-transparent hover:text-purple-800 hover:border-purple-800" href="#">Home</a></li>
-            <li><a className="inline-block py-3 px-2 border-b-2 border-transparent hover:text-purple-800 hover:border-purple-800" href="#">About</a></li>
-            <li><a className="inline-block py-3 px-2 border-b-2 border-transparent hover:text-purple-800 hover:border-purple-800" href="#">Contact</a></li>
+          <ul className="inline-flex items-center">
+            <li><a className="header-link" href="#">Home</a></li>
+            <li><a className="header-link" href="#">About</a></li>
+            <li><a className="header-link" href="#">Contact</a></li>
           </ul>
           <ul className='inline-flex items-center'>
-            <li><button className='ml-2 py-1 px-3 border-2 rounded-full border-indigo-600 text-indigo-600 hover:text-white hover:bg-indigo-800 focus:outline-none focus:ring focus:ring-violet-300'>Login</button></li>
-            <li><button className='ml-2 py-1 px-3 border-2 rounded-full border-indigo-600 text-indigo-600 hover:text-white hover:bg-indigo-800 focus:outline-none focus:ring focus:ring-violet-300'>Register</button></li>
+            <li><button className='header-btn'>Login</button></li>
+            <li><button className='header-btn'>Register</button></li>
           </ul>
         </nav>
       </header>
@@ -64,13 +64,13 @@ const App = () => {
         {/* pagination */}
         <div className='mt-20 mb-10'>
           <ul className='flex justify-center'>
-            <li><a className='inline-block py-1 px-3 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700 rounded-l-lg' href="#">Previous</a></li>
-            <li><a className='inline-block py-1 px-3 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700' href="#">1</a></li>
-            <li><a className='inline-block py-1 px-3 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700' href="#">2</a></li>
-            <li><a className='inline-block py-1 px-3 border border-gray-300 text-blue-600 hover:bg-blue-100' href="#">3</a></li>
-            <li><a className='inline-block py-1 px-3 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700' href="#">4</a></li>
-            <li><a className='inline-block py-1 px-3 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700' href="#">5</a></li>
-            <li><a className='inline-block py-1 px-3 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700 rounded-r-lg' href="#">Next</a></li>
+            <li><a className='pagination-item rounded-l-lg' href="#">Previous</a></li>
+            <li><a className='pagination-item' href="#">1</a></li>
+            <li><a className='pagination-item' href="#">2</a></li>
+            <li><a className='pagination-item text-blue-600 hover:bg-blue-100 hover:text-blue-600' href="#">3</a></li>
+            <li><a className='pagination-item' href="#">4</a></li>
+            <li><a className='pagination-item' href="#">5</a></li>
+            <li><a className='pagination-item rounded-r-lg' href="#">Next</a></li>
           </ul>
         </div>
 
@@ -94,17 +94,17 @@ const App = () => {
           <div className='mb-5'>
             <h6 className='font-semibold text-gray-700 mb-4'>Company</h6>
             <ul>
-              <li><a className='inline-block text-gray-500 py-2 hover:underline decoration-gray-700 underline-offset-2' href="#">Team</a></li>
-              <li><a className='inline-block text-gray-500 py-2 hover:underline decoration-gray-700 underline-offset-2' href="#">About us</a></li>
+              <li><a className='footer-link' href="#">Team</a></li>
+              <li><a className='footer-link' href="#">About us</a></li>
             </ul>
           </div>
 
           <div>
             <h6 className='font-semibold text-gray-700 mb-4'>Content</h6>
             <ul>
-              <li><a className='inline-block text-gray-500 py-2 hover:underline decoration-gray-700 underline-offset-2' href="#">Block</a></li>
-              <li><a className='inline-block text-gray-500 py-2 hover:underline decoration-gray-700 underline-offset-2' href="#">Policy</a></li>
-              <li><a className='inline-block text-gray-500 py-2 hover:underline decoration-gray-700 underline-offset-2' href="#">Documentation</a></li>
+              <li><a className='footer-link' href="#">Block</a></li>
+              <li><a className='footer-link' href="#">Policy</a></li>
+              <li><a className='footer-link' href="#">Documentation</a></li>
             </ul>
           </div>
         </div>
