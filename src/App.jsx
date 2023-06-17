@@ -2,7 +2,7 @@ import React from 'react'
 
 const App = () => {
   return (
-    <div className=' max-w-screen-xl mx-auto'>
+    <div className='dark:bg-slate-900 max-w-screen-xl mx-auto'>
       {/* header */}
       <header className='px-2 border-b flex items-center justify-between h-14'>
         <a className='dark:text-purple-300 uppercase font-bold text-purple-800' href="#">TailwindCSS news</a>
