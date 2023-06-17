@@ -44,7 +44,7 @@ const App = () => {
 
       {/* Banners */}
       <section className='px-2 flex space-x-2'>
-        <a className='w-2/3 bg-violet-300 h-96 mb-4 relative rounded inline-block overflow-hidden' href="">
+        <a className='w-2/3 bg-gradient-to-tr bg-purple-300 h-96 mb-4 relative rounded inline-block overflow-hidden' href="">
           <div className='p-4 absolute bottom-0 left-0 z-20'>
             <h2 className='text-4xl font-semibold text-gray-100 leading-tight'>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, soluta.
@@ -108,6 +108,35 @@ const App = () => {
         </div>
 
         <div className='w-1/3 px-2'>
+          {/* topic */}
+          <div className='mb-5'>
+            <h5 className='font-bold text-lg uppercase text-gray-700 mb-2'>Popular news</h5>
+            <ul>
+              <li className='px-1 py-4 border-white hover:border-gray-200'>
+                <a href="#" className='flex items-center text-gray-600'>
+                  <span className='inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-green-500 to-green-700'></span>
+                  Vue
+                  <span className='text-gray-500 ml-auto'>23 articles</span>
+                </a>
+                <a href="#" className='flex items-center text-gray-600'>
+                  <span className='inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-orange-500 to-orange-700'></span>
+                  Svelte
+                  <span className='text-gray-500 ml-auto'>20 articles</span>
+                </a>
+                <a href="#" className='flex items-center text-gray-600'>
+                  <span className='inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-red-500 to-red-700'></span>
+                  Angular
+                  <span className='text-gray-500 ml-auto'>15 articles</span>
+                </a>
+                <a href="#" className='flex items-center text-gray-600'>
+                  <span className='inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-blue-500 to-blue-700'></span>
+                  React
+                  <span className='text-gray-500 ml-auto'>7 articles</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
           {/* divider */}
           <div className="border border-dotted"></div>
 
