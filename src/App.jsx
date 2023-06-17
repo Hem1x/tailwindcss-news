@@ -118,16 +118,25 @@ const App = () => {
                   Vue
                   <span className='text-gray-500 ml-auto'>23 articles</span>
                 </a>
+              </li>
+
+              <li className='px-1 py-4 border-white hover:border-gray-200'>
                 <a href="#" className='flex items-center text-gray-600'>
                   <span className='inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-orange-500 to-orange-700'></span>
                   Svelte
                   <span className='text-gray-500 ml-auto'>20 articles</span>
                 </a>
+              </li>
+
+              <li className='px-1 py-4 border-white hover:border-gray-200'>
                 <a href="#" className='flex items-center text-gray-600'>
                   <span className='inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-red-500 to-red-700'></span>
                   Angular
                   <span className='text-gray-500 ml-auto'>15 articles</span>
                 </a>
+              </li>
+              
+              <li className='px-1 py-4 border-white hover:border-gray-200'>
                 <a href="#" className='flex items-center text-gray-600'>
                   <span className='inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-blue-500 to-blue-700'></span>
                   React
