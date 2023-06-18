@@ -11,7 +11,7 @@
 ![CSS3](https://img.shields.io/badge/-CSS3-1572b6?logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-f7df1e?logo=javaScript&logoColor=black)
 ![React](https://img.shields.io/badge/-React-61daf8?logo=react&logoColor=black)
-![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-00203?logo=tailwindcss)
+![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-00203?logo=tailwindcsst&logoColor=black)
 
 ## Запуск проекта
 
